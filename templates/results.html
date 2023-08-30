@@ -4,7 +4,7 @@
 <head>
     <style>
         body {
-            background-image: url("static/images2.jpg"); 
+            background-image: url("static/dosage2.jpg"); 
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -37,13 +37,11 @@
 </head>
 
 <body>
-    <div class="head"><b>Drug Finder</b></div>
+    <div class="head"><b>Drug finder</b></div>
     <div class="center">
         <div style="height: 100px; width: 1000px;">
-            <label for="text"><b>Enter drug description here:</b></label> <br />
-            {{ input_text }} <br /> <br />
-            <label for="text"><b>Predicted drug details: </b></label> <br />
-            {{ output_text }}
+            <label for="text"><b>Predicted drug details:</b></label> <br />
+            <pre>{{ output_text }}</pre> 
         </div>
     </div>
 </body>
