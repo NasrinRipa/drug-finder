@@ -40,13 +40,7 @@ We've also developed an intuitive Flask application that allows users to input d
 
 ## Use Cases
 
-The Multi-Output Text Classifier Model finds applications in a wide range of domains where a single input text needs to be classified into multiple categories or labels. Some common examples include:
-
-- Predicting product attributes based on product descriptions in e-commerce.
-- Categorizing news articles into multiple topics.
-- Tagging social media posts with relevant labels.
-
-Our model serves diverse use cases, including aiding doctors in researching specific medications, providing knowledge to the general public about particular drugs, and more. However, it is essential to note that this model's predictions should not replace professional medical advice. Users should exercise caution and manually verify predicted outputs, especially if there are discrepancies for a specific input description.
+The Multi-Output Text Classifier Model finds applications in a wide range of domains where a single input text needs to be classified into multiple categories or labels. Our model serves diverse use cases, including aiding doctors in researching specific medications, providing knowledge to the general public about particular drugs, and more. However, it is essential to note that this model's predictions should not replace professional medical advice. Users should exercise caution and manually verify predicted outputs, especially if there are discrepancies for a specific input description.
 
 ## How to Use
 
