@@ -36,7 +36,7 @@ Accessing the compressed model is seamless through the HuggingFace Spaces Gradio
 We've also developed an intuitive Flask application that allows users to input drug descriptions and receive predictions for four key outputs: drug name, uses, dosage, and side effects. The live application can be accessed via this [render Webpage](https://drug-finder.onrender.com/).
 
 ![Flask App Home](deployment/flask_home.png)
-![Flask App Results](deployment/flask_results.png)
+![Flask App Results](deployment/flsk_results.png)
 
 ## Use Cases
 
