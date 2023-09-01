@@ -21,7 +21,7 @@ The Multi-Output Text Classifier Model harnesses the combined power of text proc
 
 3. **Feature Extraction:** Text data underwent a transformation into numerical features. In our implementation, we employed the CountVectorizer technique to convert text descriptions into numerical feature vectors.
 
-4. **Multi-Output Classification:** At the core of the model lies a powerful multi-output classifier (MultiOutputTextClassifier). This classifier excels at predicting multiple target variables simultaneously. We leveraged algorithms like Logistic Regression and K-Nearest Neighbors, streamlining the entire process using pipelines. You can find the model files, "Medicine_Library.joblib" and "medicine_library_knn.joblib," in the "models" folder.
+4. **Multi-Output Classification:** At the core of the model lies a powerful multi-output classifier (MultiOutputClassifier). This classifier excels at predicting multiple target variables simultaneously. We leveraged algorithms like Logistic Regression and K-Nearest Neighbors, streamlining the entire process using pipelines. You can find the model files, "Medicine_Library.joblib" and "medicine_library_knn.joblib," in the "models" folder.
 
 5. **Prediction and Evaluation:** Once trained, the model is ready for making predictions. Given a new drug description, the model predicts various details, including drug name, uses, dosage, and side effects. The model's predictive accuracy is assessed using appropriate metrics. Notably, the accuracy score reached 1.0. You can review the training code in the "pynotebook/medicine.pynb" file.
 
