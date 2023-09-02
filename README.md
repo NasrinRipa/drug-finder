@@ -1,7 +1,7 @@
 # Drud Finder 💉💊
 ## A Multi-Output Text Classifier Model 
 
-# Background 
+## Background 
 The "Drug Finder" project addresses the challenge of efficiently and accurately extracting drug details, including name, uses, dosage, and side effects, from textual drug descriptions. Currently, healthcare professionals and patients face a time-consuming and error-prone process of manually searching for this information. This project aims to develop a multioutput classifier model, utilizing logistic regression and trained on a diverse dataset, to predict drug details from natural language descriptions. The model will be deployed as an API, integrated into a user-friendly web application, and hosted on a server, facilitating easy access. By providing a reliable tool for obtaining drug information, this project seeks to improve healthcare decision-making, reduce medication errors, and enhance patient care in the pharmaceutical domain. The project's success will be assessed based on prediction accuracy, usability, and user feedback.
 
 ## Overview
