@@ -1,4 +1,4 @@
-# Drud Finder 💉💊
+# Drug Finder 💉💊
 ## A Multi-Output Text Classifier Model 
 
 ## Background 
