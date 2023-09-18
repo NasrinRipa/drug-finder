@@ -18,7 +18,7 @@ The Multi-Output Text Classifier Model harnesses the combined power of text proc
     
     ii) Drug Details Scraping: Leveraging the acquired URLs, we extracted comprehensive drug descriptions, uses, dosages, and side effects. These scripts are also available in the scraper folder. The resulting data was then stored in `data\drug_dataset_big.csv`.
 
-    In total, we amassed 45898 drug details through scraping, which, after thorough data cleaning, yielded a dataset of 5980 drug entries, complete with detailed descriptions, uses, dosages, and side effects (with a file size of over 80 MB).
+    In total, we amassed over 65k drug details through scraping, which, after thorough data cleaning, yielded a dataset of 45,898 drug entries, complete with detailed descriptions, uses, dosages, and side effects (with a file size of 78 MB).
 
 2. **Data Preprocessing:** We subjected the input text data (in this case, drug descriptions) to preprocessing. This encompassed tasks such as text normalization, handling missing values, and converting the data into a suitable format for machine learning.
 
