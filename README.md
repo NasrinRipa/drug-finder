@@ -12,13 +12,13 @@ The Multi-Output Text Classifier Model is an advanced machine learning solution 
 
 The Multi-Output Text Classifier Model harnesses the combined power of text processing techniques and machine learning algorithms to perform its predictions. Here's an overview of its key operational steps:
 
-1. **Data Collection:** Our primary dataset was meticulously sourced from the esteemed website [DATA](https://www.healthline.com). The data collection process involved two pivotal stages:
+1. **Data Collection:** Our primary dataset was meticulously sourced from 2 esteemed websites [Data Source 1](https://www.healthline.com) and [Data Source 2](https://www.drugs.com). The data collection process involved two pivotal stages:
 
-    i) Drug URL Scraping: We systematically gathered drug URLs, along with their corresponding names, using the `scraper\drug_urls.py` script.
+    i) Drug URL Scraping: We systematically gathered drug URLs, along with their corresponding names and the files are available in the scraper folder.
     
-    ii) Drug Details Scraping: Leveraging the acquired URLs, we extracted comprehensive drug descriptions, uses, dosages, and side effects using the `scraper\drug_details.py` script. The resulting data was then stored in `data\drug_details.csv`.
+    ii) Drug Details Scraping: Leveraging the acquired URLs, we extracted comprehensive drug descriptions, uses, dosages, and side effects. These scripts are also available in the scraper folder. The resulting data was then stored in `data\drug_dataset_big.csv`.
 
-    In total, we amassed 6032 drug details through scraping, which, after thorough data cleaning, yielded a dataset of 5980 drug entries, complete with detailed descriptions, uses, dosages, and side effects (with a file size of over 60 MB).
+    In total, we amassed 45898 drug details through scraping, which, after thorough data cleaning, yielded a dataset of 5980 drug entries, complete with detailed descriptions, uses, dosages, and side effects (with a file size of over 80 MB).
 
 2. **Data Preprocessing:** We subjected the input text data (in this case, drug descriptions) to preprocessing. This encompassed tasks such as text normalization, handling missing values, and converting the data into a suitable format for machine learning.
 
