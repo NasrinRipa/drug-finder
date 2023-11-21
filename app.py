@@ -10,20 +10,27 @@ def predict_drug(input_text):
         ]
     }).json()
     
-    predicted_text = response["data"][0]  # Get the first item from the 'data' list
-    return predicted_text
+    # Assuming the response contains 'uses', 'dosage', and 'side_effects' keys
+    drug_details = {
+        "uses": response["uses"],
+        "dosage": response["dosage"],
+        "side_effects": response["side_effects"]
+    }
+    
+    return drug_details
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
     if request.method == "POST":
         input_text = request.form['text']
-        output_text = predict_drug(input_text)
-        return render_template("results.html", input_text=input_text, output_text=output_text)
+        drug_details = predict_drug(input_text)
+        return render_template("results.html", input_text=input_text, drug_details=drug_details)
     else:
         return render_template("index.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
