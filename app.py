@@ -4,22 +4,22 @@ import requests
 app = Flask(__name__)
 
 
+# Modify the predict_drug function to return a dictionary with 'uses', 'dosage', 'side_effects' keys
 def predict_drug(input_text):
     response = requests.post("https://nasrin2023ripa-medicine-library.hf.space/run/predict", json={
-        "data": [input_text]
+        "data": [
+            input_text
+        ]
     }).json()
     
-    # Check if the expected keys exist in the API response
-    if 'uses' in response and 'dosage' in response and 'side_effects' in response:
-        drug_details = {
-            "uses": response["uses"],
-            "dosage": response["dosage"],
-            "side_effects": response["side_effects"]
-        }
-        return drug_details
-    else:
-        # Handle the case where the expected keys are missing in the API response
-        return {"error": "Unexpected response format from the API"}
+    # Assuming the response contains 'data' key with the required information
+    predicted_text = response["data"][0]  # Get the first item from the 'data' list
+    
+    return {
+        "uses": predicted_text.get('uses', ''),
+        "dosage": predicted_text.get('dosage', ''),
+        "side_effects": predicted_text.get('side_effects', '')
+    }
 
 
 @app.route("/", methods=['GET', 'POST'])
