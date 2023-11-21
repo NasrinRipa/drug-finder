@@ -4,7 +4,7 @@
 <head>
     <style>
         body {
-            background-image: url("static/dosage2.jpg"); 
+            background-image: url("static/dosage2.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -28,22 +28,15 @@
             justify-content: center;
             align-items: center;
             height: 50vh;
-            font-size: 15px;
+            font-size: 25px;
         }
 
         #text {
             height: 100px;
-            width: 500px;
-            font-size: 10px;
-        }
-
-        /* Box around text content */
-        .box {
-            border: 2px solid navy; /* Border color is navy blue */
-            padding: 10px;
-            margin: 10px;
-            border-radius: 8px; /* Rounded corners */
-            background-color: #EFEFEF; /* Background color */
+            width: 1000px;
+            font-size: 20px;
+            color: navy; /* Navy blue font color */
+            text-align: left; /* Left-align text */
         }
     </style>
 </head>
@@ -51,14 +44,15 @@
 <body>
     <div class="head"><b>Drug Finder</b></div>
     <div class="center">
-        <div class="box" style="height: 100px; width: 1000px;">
+        <div id="text">
             <label for="text" style="color: navy;"><b>Predicted drug details:</b></label> <br />
-            <pre style="font-family: 'Times New Roman', Times, serif; color: navy; text-align: justify;">{{ output_text }}</pre> 
+            <pre style="font-family: 'Times New Roman', Times, serif; color: navy; text-align: left;">{{ output_text }}</pre>
         </div>
     </div>
 </body>
 
 </html>
+
 
 
 
