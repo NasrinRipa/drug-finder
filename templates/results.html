@@ -13,14 +13,16 @@
             font-family: "Times New Roman", Times, serif; /* Times New Roman font */
             width: 21cm; /* A4 width in CSS units */
             height: 29.7cm; /* A4 height in CSS units */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .head {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            font-family: 'Courier New', Courier, monospace; /* Newspaper font */
+            font-weight: bold; /* Bold text */
             font-size: 30px;
-            height: 5ch;
             color: blue; /* Blue font color */
             text-align: center; /* Center text alignment */
         }
@@ -44,7 +46,7 @@
 </head>
 
 <body>
-    <div class="head"><b>Drug Finder</b></div>
+    <div class="head">Drug Finder</div>
     <div class="center">
         <div id="text">
             <label for="text" style="color: yellow;"><b>Predicted drug details:</b></label> <br />
@@ -54,4 +56,5 @@
 </body>
 
 </html>
+
 
