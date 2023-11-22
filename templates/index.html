@@ -18,7 +18,14 @@
             align-items: center;
             font-size: 30px;
             height: 5ch;
-            color: yellow; /* Yellow font color */
+            color: blue; /* Blue font color */
+        }
+
+        .head-container {
+            border: 4px solid blue; /* Border around the header */
+            padding: 10px; /* Padding inside the header container */
+            text-align: center; /* Center-align text inside the container */
+            margin-bottom: 20px; /* Added margin at the bottom of the header container */
         }
 
         .center {
@@ -39,6 +46,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+
+        #text-label {
+            color: yellow; /* Yellow font color */
         }
 
         #text {
@@ -62,10 +73,12 @@
     </style>
 </head>
 <body>
-    <div class="head"><b>Drug Finder</b></div>
+    <div class="head-container">
+        <div class="head">Drug Finder</div>
+    </div>
     <div class="center">
         <form action="/" method="post">
-            <label for="text"><b>Enter drug description: </b></label> <br />
+            <label id="text-label" for="text"><b>Enter drug description:</b></label> <br />
             <textarea id="text" name="text"></textarea> <br />
             <input type="submit" value="Submit">
         </form>
